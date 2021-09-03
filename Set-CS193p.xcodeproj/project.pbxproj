@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C8A73C226DA35C00053D991 /* SetGameViewRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */; };
+		8C8A73C326DA35C00053D991 /* SetGameViewRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */; };
+		8C8BE57A26D8DA6F00629F38 /* XShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BE57926D8DA6E00629F38 /* XShape.swift */; };
 		8C9AED0326C8F698000D6723 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED0226C8F698000D6723 /* Tests_iOS.swift */; };
 		8C9AED0E26C8F698000D6723 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED0D26C8F698000D6723 /* Tests_macOS.swift */; };
 		8C9AED1026C8F698000D6723 /* Set_CS193pApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AECE726C8F697000D6723 /* Set_CS193pApp.swift */; };
 		8C9AED1126C8F698000D6723 /* Set_CS193pApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AECE726C8F697000D6723 /* Set_CS193pApp.swift */; };
-		8C9AED1226C8F698000D6723 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AECE826C8F697000D6723 /* ContentView.swift */; };
-		8C9AED1326C8F698000D6723 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AECE826C8F697000D6723 /* ContentView.swift */; };
 		8C9AED1426C8F698000D6723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AECE926C8F698000D6723 /* Assets.xcassets */; };
 		8C9AED1526C8F698000D6723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9AECE926C8F698000D6723 /* Assets.xcassets */; };
+		8C9AED4326C8F753000D6723 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3926C8F752000D6723 /* AspectVGrid.swift */; };
+		8C9AED4426C8F753000D6723 /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3926C8F752000D6723 /* AspectVGrid.swift */; };
+		8C9AED4526C8F753000D6723 /* SquiggleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3B26C8F752000D6723 /* SquiggleShape.swift */; };
+		8C9AED4626C8F753000D6723 /* SquiggleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3B26C8F752000D6723 /* SquiggleShape.swift */; };
+		8C9AED4726C8F753000D6723 /* DiamondShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3C26C8F752000D6723 /* DiamondShape.swift */; };
+		8C9AED4826C8F753000D6723 /* DiamondShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3C26C8F752000D6723 /* DiamondShape.swift */; };
+		8C9AED4926C8F753000D6723 /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3D26C8F752000D6723 /* SetGameView.swift */; };
+		8C9AED4A26C8F753000D6723 /* SetGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED3D26C8F752000D6723 /* SetGameView.swift */; };
+		8C9AED4B26C8F753000D6723 /* SetGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED4026C8F753000D6723 /* SetGameViewModel.swift */; };
+		8C9AED4C26C8F753000D6723 /* SetGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED4026C8F753000D6723 /* SetGameViewModel.swift */; };
+		8C9AED4D26C8F753000D6723 /* SetGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED4126C8F753000D6723 /* SetGameModel.swift */; };
+		8C9AED4E26C8F753000D6723 /* SetGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED4126C8F753000D6723 /* SetGameModel.swift */; };
+		C5397B3426E052A100B29B3B /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5397B3326E052A100B29B3B /* Checkmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewRedo.swift; sourceTree = "<group>"; };
+		8C8BE57926D8DA6E00629F38 /* XShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XShape.swift; sourceTree = "<group>"; };
 		8C9AECE726C8F697000D6723 /* Set_CS193pApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set_CS193pApp.swift; sourceTree = "<group>"; };
-		8C9AECE826C8F697000D6723 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C9AECE926C8F698000D6723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C9AECEE26C8F698000D6723 /* Set-CS193p.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Set-CS193p.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9AECF126C8F698000D6723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,13 @@
 		8C9AED0926C8F698000D6723 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9AED0D26C8F698000D6723 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		8C9AED0F26C8F698000D6723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9AED3926C8F752000D6723 /* AspectVGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		8C9AED3B26C8F752000D6723 /* SquiggleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquiggleShape.swift; sourceTree = "<group>"; };
+		8C9AED3C26C8F752000D6723 /* DiamondShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiamondShape.swift; sourceTree = "<group>"; };
+		8C9AED3D26C8F752000D6723 /* SetGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameView.swift; sourceTree = "<group>"; };
+		8C9AED4026C8F753000D6723 /* SetGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameViewModel.swift; sourceTree = "<group>"; };
+		8C9AED4126C8F753000D6723 /* SetGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameModel.swift; sourceTree = "<group>"; };
+		C5397B3326E052A100B29B3B /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				8C9AECE726C8F697000D6723 /* Set_CS193pApp.swift */,
-				8C9AECE826C8F697000D6723 /* ContentView.swift */,
 				8C9AECE926C8F698000D6723 /* Assets.xcassets */,
+				8C9AED3E26C8F752000D6723 /* Model */,
+				8C9AED3F26C8F753000D6723 /* View Model */,
+				8C9AED3826C8F752000D6723 /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -150,6 +174,44 @@
 			);
 			path = "Tests macOS";
 			sourceTree = "<group>";
+		};
+		8C9AED3826C8F752000D6723 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AED3D26C8F752000D6723 /* SetGameView.swift */,
+				8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */,
+				8C9AED3926C8F752000D6723 /* AspectVGrid.swift */,
+				8C9AED3A26C8F752000D6723 /* ShapeViews */,
+			);
+			path = Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		8C9AED3A26C8F752000D6723 /* ShapeViews */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AED3B26C8F752000D6723 /* SquiggleShape.swift */,
+				8C9AED3C26C8F752000D6723 /* DiamondShape.swift */,
+				8C8BE57926D8DA6E00629F38 /* XShape.swift */,
+				C5397B3326E052A100B29B3B /* Checkmark.swift */,
+			);
+			path = ShapeViews;
+			sourceTree = "<group>";
+		};
+		8C9AED3E26C8F752000D6723 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AED4126C8F753000D6723 /* SetGameModel.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		8C9AED3F26C8F753000D6723 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C9AED4026C8F753000D6723 /* SetGameViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -308,8 +370,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9AED1226C8F698000D6723 /* ContentView.swift in Sources */,
+				8C8BE57A26D8DA6F00629F38 /* XShape.swift in Sources */,
+				C5397B3426E052A100B29B3B /* Checkmark.swift in Sources */,
+				8C8A73C226DA35C00053D991 /* SetGameViewRedo.swift in Sources */,
+				8C9AED4326C8F753000D6723 /* AspectVGrid.swift in Sources */,
 				8C9AED1026C8F698000D6723 /* Set_CS193pApp.swift in Sources */,
+				8C9AED4726C8F753000D6723 /* DiamondShape.swift in Sources */,
+				8C9AED4B26C8F753000D6723 /* SetGameViewModel.swift in Sources */,
+				8C9AED4D26C8F753000D6723 /* SetGameModel.swift in Sources */,
+				8C9AED4526C8F753000D6723 /* SquiggleShape.swift in Sources */,
+				8C9AED4926C8F753000D6723 /* SetGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C9AED1326C8F698000D6723 /* ContentView.swift in Sources */,
+				8C9AED4426C8F753000D6723 /* AspectVGrid.swift in Sources */,
 				8C9AED1126C8F698000D6723 /* Set_CS193pApp.swift in Sources */,
+				8C9AED4826C8F753000D6723 /* DiamondShape.swift in Sources */,
+				8C8A73C326DA35C00053D991 /* SetGameViewRedo.swift in Sources */,
+				8C9AED4C26C8F753000D6723 /* SetGameViewModel.swift in Sources */,
+				8C9AED4E26C8F753000D6723 /* SetGameModel.swift in Sources */,
+				8C9AED4626C8F753000D6723 /* SquiggleShape.swift in Sources */,
+				8C9AED4A26C8F753000D6723 /* SetGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
