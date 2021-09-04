@@ -64,6 +64,7 @@ struct SetGameModel {
     mutating func matchSelectedCards() {
         if selectedCardsDeck.count == 3 {
             //could try .matched
+            
             //sameDiffShape = All same or different characteristics
             let sameDiffShape = selectedCardsDeck[0].shape == selectedCardsDeck[1].shape && selectedCardsDeck[0].shape == selectedCardsDeck[2].shape || selectedCardsDeck[0].shape != selectedCardsDeck[1].shape && selectedCardsDeck[0].shape != selectedCardsDeck[2].shape
             let sameDiffShading = selectedCardsDeck[0].shading == selectedCardsDeck[1].shading && selectedCardsDeck[0].shading == selectedCardsDeck[2].shading || selectedCardsDeck[0].shading != selectedCardsDeck[1].shading && selectedCardsDeck[0].shading != selectedCardsDeck[2].shading
@@ -71,13 +72,10 @@ struct SetGameModel {
             let sameDiffNumber = selectedCardsDeck[0].numberOfShapes == selectedCardsDeck[1].numberOfShapes && selectedCardsDeck[0].numberOfShapes == selectedCardsDeck[2].numberOfShapes || selectedCardsDeck[0].numberOfShapes != selectedCardsDeck[1].numberOfShapes && selectedCardsDeck[0].numberOfShapes != selectedCardsDeck[2].numberOfShapes
             
             if sameDiffShape && sameDiffShading && sameDiffColor && sameDiffNumber {
-               
                 for card in selectedCardsDeck {
                     win(card)
                 }
-                score += 3
-                selectedCardsDeck.removeAll()
-                dealCards(upTo: 3)
+               
             }
             for card in selectedCardsDeck {
                 if let eachCard = dealtDeck.firstIndex(where: { $0.id == card.id}) {
@@ -92,8 +90,14 @@ struct SetGameModel {
             dealtDeck[eachCard].state = .matched
     }
     }
+    mutating func removeXs() {
+        dealtDeck.indices.forEach {dealtDeck[$0].state = .unselected}
+    }
     mutating func winRemoval() {
         dealtDeck.removeAll(where: {$0.state == .matched })
+        score += 3
+        selectedCardsDeck.removeAll()
+        dealCards(upTo: 3)
     }
     mutating func dealCards(upTo: Int) {
         if dealtDeck.contains(where: { $0.state == .mismatched}) {
@@ -113,7 +117,7 @@ struct SetGameModel {
         var shading: CardShading
         var color: CardColor
         var numberOfShapes: Int
-        var state: CardState = .matched
+        var state: CardState = .unselected
     }
 }
 enum CardShape: CaseIterable {

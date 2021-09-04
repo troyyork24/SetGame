@@ -29,6 +29,9 @@ class SetGameViewModel: ObservableObject {
     func winRemoval() {
         setModel.winRemoval()
     }
+    func xRemoval() {
+        setModel.removeXs()
+    }
     func switchColors(_ card: SetGameModel.Card) -> Color {
         switch card.color {
             case .green:

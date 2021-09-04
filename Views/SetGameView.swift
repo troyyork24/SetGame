@@ -27,7 +27,7 @@ struct SetGameView: View {
                 Spacer()
             }
             Rectangle().frame(width: 200, height: 1).background(Color.white)
-            CardsListView(setGameViewModel: setGameVM)
+            CardsListView(setGameVM: setGameVM)
                 .padding(.horizontal)
             
             HStack {
@@ -55,21 +55,21 @@ struct SetGameView: View {
     }
 }
 struct CardsListView: View {
-    @ObservedObject var setGameViewModel: SetGameViewModel
+    @ObservedObject var setGameVM: SetGameViewModel
     
     var body: some View {
-        AspectVGrid(items: setGameViewModel.setModel.dealtDeck, aspectRatio: 2/3, content: { card in
-            CardView(card: card)
+        AspectVGrid(items: setGameVM.setModel.dealtDeck, aspectRatio: 2/3, content: { card in
+            CardView(setGameVM: setGameVM, card: card)
                 .onTapGesture {
-                    setGameViewModel.choose(card)
+                    setGameVM.choose(card)
                 }
                 .padding(4)
         })
     }
 }
 struct CardView: View {
-@ObservedObject var setGameVM = SetGameViewModel()
-let card: SetGameModel.Card
+    @ObservedObject var setGameVM: SetGameViewModel
+    let card: SetGameModel.Card
 
   
 
@@ -78,7 +78,6 @@ var body: some View {
     let color = SetGameViewModel().switchColors(card)
     let isSelected = card.state == .isSelected ? 0.2 : 1
     let wrongAnswer = card.state == .mismatched || card.state == .matched
-    ZStack {
         ZStack {
             
             // card white background
@@ -109,19 +108,27 @@ var body: some View {
             }
             .opacity(wrongAnswer  ? 0.2 : 1)
         }
+        .overlay(
         ZStack {
             if card.state == .mismatched {
                 XShape()
+                    .onAppear() {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: { setGameVM.xRemoval()})
+                    }
             }
             if card.state == .matched {
                 Checkmark()
                     .foregroundColor(.green)
-//                Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: { _ in setGameVM.winRemoval() } )
+                    .onAppear() {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: { setGameVM.winRemoval()})
+            }
+                    
             }
         }
             .animation(wrongAnswer ? .easeInOut(duration: 2).speed(15).repeatCount(5) : .none)
         
-    }
+        
+    )
 }
 
 
