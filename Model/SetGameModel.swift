@@ -76,13 +76,14 @@ struct SetGameModel {
                     win(card)
                 }
                
-            }
+            } else {
             for card in selectedCardsDeck {
                 if let eachCard = dealtDeck.firstIndex(where: { $0.id == card.id}) {
                     dealtDeck[eachCard].state = .mismatched
                 }
             }
             score -= 1
+        }
         }
     }
     mutating func win(_ card: Card) {
