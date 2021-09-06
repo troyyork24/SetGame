@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C8A73C226DA35C00053D991 /* SetGameViewRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */; };
-		8C8A73C326DA35C00053D991 /* SetGameViewRedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */; };
+		8C68040526E59DD800EE9180 /* ScrollForMoreCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040426E59DD800EE9180 /* ScrollForMoreCardsView.swift */; };
+		8C68040826E6116D00EE9180 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040726E6116D00EE9180 /* CardListView.swift */; };
+		8C68040926E6116D00EE9180 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040726E6116D00EE9180 /* CardListView.swift */; };
+		8C68040B26E6123900EE9180 /* CardShadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040A26E6123900EE9180 /* CardShadingView.swift */; };
+		8C68040C26E6123900EE9180 /* CardShadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040A26E6123900EE9180 /* CardShadingView.swift */; };
+		8C68040E26E6191D00EE9180 /* CardStripedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040D26E6191D00EE9180 /* CardStripedView.swift */; };
+		8C68040F26E6191D00EE9180 /* CardStripedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68040D26E6191D00EE9180 /* CardStripedView.swift */; };
+		8C68041126E61CAF00EE9180 /* CardSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68041026E61CAF00EE9180 /* CardSymbolView.swift */; };
+		8C68041226E61CAF00EE9180 /* CardSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C68041026E61CAF00EE9180 /* CardSymbolView.swift */; };
 		8C8BE57A26D8DA6F00629F38 /* XShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BE57926D8DA6E00629F38 /* XShape.swift */; };
 		8C9AED0326C8F698000D6723 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED0226C8F698000D6723 /* Tests_iOS.swift */; };
 		8C9AED0E26C8F698000D6723 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED0D26C8F698000D6723 /* Tests_macOS.swift */; };
@@ -29,6 +36,8 @@
 		8C9AED4D26C8F753000D6723 /* SetGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED4126C8F753000D6723 /* SetGameModel.swift */; };
 		8C9AED4E26C8F753000D6723 /* SetGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AED4126C8F753000D6723 /* SetGameModel.swift */; };
 		C5397B3426E052A100B29B3B /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5397B3326E052A100B29B3B /* Checkmark.swift */; };
+		C5397B3626E5C42900B29B3B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5397B3526E5C42900B29B3B /* CardView.swift */; };
+		C5397B3726E5C42900B29B3B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5397B3526E5C42900B29B3B /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewRedo.swift; sourceTree = "<group>"; };
+		8C68040426E59DD800EE9180 /* ScrollForMoreCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollForMoreCardsView.swift; sourceTree = "<group>"; };
+		8C68040726E6116D00EE9180 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+		8C68040A26E6123900EE9180 /* CardShadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShadingView.swift; sourceTree = "<group>"; };
+		8C68040D26E6191D00EE9180 /* CardStripedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStripedView.swift; sourceTree = "<group>"; };
+		8C68041026E61CAF00EE9180 /* CardSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSymbolView.swift; sourceTree = "<group>"; };
 		8C8BE57926D8DA6E00629F38 /* XShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XShape.swift; sourceTree = "<group>"; };
 		8C9AECE726C8F697000D6723 /* Set_CS193pApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set_CS193pApp.swift; sourceTree = "<group>"; };
 		8C9AECE926C8F698000D6723 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +84,7 @@
 		8C9AED4026C8F753000D6723 /* SetGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameViewModel.swift; sourceTree = "<group>"; };
 		8C9AED4126C8F753000D6723 /* SetGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGameModel.swift; sourceTree = "<group>"; };
 		C5397B3326E052A100B29B3B /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkmark.swift; sourceTree = "<group>"; };
+		C5397B3526E5C42900B29B3B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C68040626E610AC00EE9180 /* Card Setup */ = {
+			isa = PBXGroup;
+			children = (
+				C5397B3526E5C42900B29B3B /* CardView.swift */,
+				8C68040726E6116D00EE9180 /* CardListView.swift */,
+				8C9AED3926C8F752000D6723 /* AspectVGrid.swift */,
+			);
+			path = "Card Setup";
+			sourceTree = "<group>";
+		};
+		8C68041326E61E3D00EE9180 /* CardShading Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C68040A26E6123900EE9180 /* CardShadingView.swift */,
+				8C68040D26E6191D00EE9180 /* CardStripedView.swift */,
+				8C68041026E61CAF00EE9180 /* CardSymbolView.swift */,
+			);
+			path = "CardShading Views";
+			sourceTree = "<group>";
+		};
+		8C68041526E61F4600EE9180 /* Extra Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C8BE57926D8DA6E00629F38 /* XShape.swift */,
+				C5397B3326E052A100B29B3B /* Checkmark.swift */,
+				8C68040426E59DD800EE9180 /* ScrollForMoreCardsView.swift */,
+			);
+			path = "Extra Views";
+			sourceTree = "<group>";
+		};
 		8C9AECE126C8F697000D6723 = {
 			isa = PBXGroup;
 			children = (
@@ -179,22 +223,21 @@
 			isa = PBXGroup;
 			children = (
 				8C9AED3D26C8F752000D6723 /* SetGameView.swift */,
-				8C8A73C126DA35C00053D991 /* SetGameViewRedo.swift */,
-				8C9AED3926C8F752000D6723 /* AspectVGrid.swift */,
-				8C9AED3A26C8F752000D6723 /* ShapeViews */,
+				8C68040626E610AC00EE9180 /* Card Setup */,
+				8C9AED3A26C8F752000D6723 /* CardShape Views */,
+				8C68041326E61E3D00EE9180 /* CardShading Views */,
+				8C68041526E61F4600EE9180 /* Extra Views */,
 			);
 			path = Views;
 			sourceTree = SOURCE_ROOT;
 		};
-		8C9AED3A26C8F752000D6723 /* ShapeViews */ = {
+		8C9AED3A26C8F752000D6723 /* CardShape Views */ = {
 			isa = PBXGroup;
 			children = (
 				8C9AED3B26C8F752000D6723 /* SquiggleShape.swift */,
 				8C9AED3C26C8F752000D6723 /* DiamondShape.swift */,
-				8C8BE57926D8DA6E00629F38 /* XShape.swift */,
-				C5397B3326E052A100B29B3B /* Checkmark.swift */,
 			);
-			path = ShapeViews;
+			path = "CardShape Views";
 			sourceTree = "<group>";
 		};
 		8C9AED3E26C8F752000D6723 /* Model */ = {
@@ -372,13 +415,18 @@
 			files = (
 				8C8BE57A26D8DA6F00629F38 /* XShape.swift in Sources */,
 				C5397B3426E052A100B29B3B /* Checkmark.swift in Sources */,
-				8C8A73C226DA35C00053D991 /* SetGameViewRedo.swift in Sources */,
 				8C9AED4326C8F753000D6723 /* AspectVGrid.swift in Sources */,
 				8C9AED1026C8F698000D6723 /* Set_CS193pApp.swift in Sources */,
 				8C9AED4726C8F753000D6723 /* DiamondShape.swift in Sources */,
 				8C9AED4B26C8F753000D6723 /* SetGameViewModel.swift in Sources */,
+				8C68040E26E6191D00EE9180 /* CardStripedView.swift in Sources */,
 				8C9AED4D26C8F753000D6723 /* SetGameModel.swift in Sources */,
 				8C9AED4526C8F753000D6723 /* SquiggleShape.swift in Sources */,
+				8C68041126E61CAF00EE9180 /* CardSymbolView.swift in Sources */,
+				8C68040B26E6123900EE9180 /* CardShadingView.swift in Sources */,
+				8C68040526E59DD800EE9180 /* ScrollForMoreCardsView.swift in Sources */,
+				C5397B3626E5C42900B29B3B /* CardView.swift in Sources */,
+				8C68040826E6116D00EE9180 /* CardListView.swift in Sources */,
 				8C9AED4926C8F753000D6723 /* SetGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,13 +436,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C9AED4426C8F753000D6723 /* AspectVGrid.swift in Sources */,
+				8C68040C26E6123900EE9180 /* CardShadingView.swift in Sources */,
+				C5397B3726E5C42900B29B3B /* CardView.swift in Sources */,
 				8C9AED1126C8F698000D6723 /* Set_CS193pApp.swift in Sources */,
 				8C9AED4826C8F753000D6723 /* DiamondShape.swift in Sources */,
-				8C8A73C326DA35C00053D991 /* SetGameViewRedo.swift in Sources */,
 				8C9AED4C26C8F753000D6723 /* SetGameViewModel.swift in Sources */,
+				8C68041226E61CAF00EE9180 /* CardSymbolView.swift in Sources */,
 				8C9AED4E26C8F753000D6723 /* SetGameModel.swift in Sources */,
 				8C9AED4626C8F753000D6723 /* SquiggleShape.swift in Sources */,
+				8C68040926E6116D00EE9180 /* CardListView.swift in Sources */,
 				8C9AED4A26C8F753000D6723 /* SetGameView.swift in Sources */,
+				8C68040F26E6191D00EE9180 /* CardStripedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
