@@ -77,7 +77,6 @@ struct SetGameModel {
                     win(card)
                 }
                 score += 3
-               
             } else {
             for card in selectedCardsDeck {
                 if let eachCard = dealtDeck.firstIndex(where: { $0.id == card.id}) {
