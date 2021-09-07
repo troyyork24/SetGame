@@ -12,6 +12,7 @@ struct SetGameModel {
     private(set) var dealtDeck: Array<Card>
     private(set) var selectedCardsDeck: Array<Card>
     var score: Int
+    var showScrollPopUp = false
     
     init() {
         deck = Array<Card>()

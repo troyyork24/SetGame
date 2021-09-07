@@ -50,7 +50,7 @@ struct SetGameView: View {
             }
             .padding()
         }
-        .background(LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .bottom, endPoint: .trailing).ignoresSafeArea().animation(.easeIn))
+        .background(LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .bottom, endPoint: .trailing).ignoresSafeArea())
     }
 }
 

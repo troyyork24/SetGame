@@ -11,7 +11,7 @@ struct CardListView: View {
     @ObservedObject var setGameVM: SetGameViewModel
     
     var body: some View {
-        AspectVGrid(items: setGameVM.setModel.dealtDeck, aspectRatio: 2/3, content: { card in
+        AspectVGrid(items: setGameVM.setModel.dealtDeck, aspectRatio: 2/3, setGameVM: setGameVM, content: { card in
             CardView(setGameVM: setGameVM, card: card)
                 .onTapGesture {
                     setGameVM.choose(card)

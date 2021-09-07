@@ -29,6 +29,9 @@ class SetGameViewModel: ObservableObject {
     func winRemoval() {
         setModel.winRemoval()
     }
+    func showScrollPopUp() {
+        setModel.showScrollPopUp.toggle()
+    }
     func xRemoval() {
         setModel.removeXs()
     }
@@ -47,5 +50,8 @@ class SetGameViewModel: ObservableObject {
     }
     var cardsLeftInDeck: Int {
         setModel.deck.count
+    }
+    var showingScrollPopUp: Bool {
+        setModel.showScrollPopUp
     }
 }

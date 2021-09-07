@@ -9,15 +9,28 @@ import SwiftUI
 
 struct ScrollForMoreCardsView: View {
     var body: some View {
-        VStack {
-            Text("SCROLL")
-            Spacer(minLength: 15)
-            HStack {
-                Image(systemName: "arrow.down")
-                Image(systemName: "arrow.down")
+        
+        ZStack {
+           LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .bottom, endPoint: .trailing).ignoresSafeArea()
+            VStack {
+                Spacer()
+                Text("""
+                    SCROLL
+                    FOR
+                    MORE
+                    CARDS
+                    """).multilineTextAlignment(.center).font(.system(size: 30))
+                Spacer()
+                HStack {
+                    Image(systemName: "arrow.down").resizable().scaleEffect(0.3)
+                    Image(systemName: "arrow.down").resizable().scaleEffect(0.3)
+                }
+                .padding(.bottom, 20)
+                
+                Spacer()
             }
+            .foregroundColor(.white)
         }
-        .foregroundColor(.white)
     }
 }
 
