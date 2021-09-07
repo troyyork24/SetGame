@@ -76,6 +76,7 @@ struct SetGameModel {
                 for card in selectedCardsDeck {
                     win(card)
                 }
+                score += 3
                
             } else {
             for card in selectedCardsDeck {
@@ -97,7 +98,6 @@ struct SetGameModel {
     }
     mutating func winRemoval() {
         dealtDeck.removeAll(where: {$0.state == .matched })
-        score += 3
         selectedCardsDeck.removeAll()
         dealCards(upTo: 3)
     }
