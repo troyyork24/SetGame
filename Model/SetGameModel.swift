@@ -51,16 +51,16 @@ struct SetGameModel {
     mutating func switchState(_ card: Card) {
         if let chosenIndex = dealtDeck.firstIndex(where: { $0.id == card.id }) {
             switch dealtDeck[chosenIndex].state {
-            case .mismatched:
-                return dealtDeck[chosenIndex].state = .isSelected
-            case .isSelected:
-                return dealtDeck[chosenIndex].state = .unselected
-            case .unselected:
-                return dealtDeck[chosenIndex].state = .isSelected
-            default:
-                return dealtDeck[chosenIndex].state = .unselected
+                case .mismatched:
+                    return dealtDeck[chosenIndex].state = .isSelected
+                case .isSelected:
+                    return dealtDeck[chosenIndex].state = .unselected
+                case .unselected:
+                    return dealtDeck[chosenIndex].state = .isSelected
+                default:
+                    return dealtDeck[chosenIndex].state = .unselected
             }
-    }
+        }
     }
     mutating func matchSelectedCards() {
         if selectedCardsDeck.count == 3 {
@@ -78,19 +78,19 @@ struct SetGameModel {
                 }
                 score += 3
             } else {
-            for card in selectedCardsDeck {
-                if let eachCard = dealtDeck.firstIndex(where: { $0.id == card.id}) {
-                    dealtDeck[eachCard].state = .mismatched
+                for card in selectedCardsDeck {
+                    if let eachCard = dealtDeck.firstIndex(where: { $0.id == card.id}) {
+                        dealtDeck[eachCard].state = .mismatched
+                    }
                 }
+                score -= 1
             }
-            score -= 1
-        }
         }
     }
     mutating func win(_ card: Card) {
         if let eachCard = dealtDeck.firstIndex(where: { $0.id == card.id}) {
             dealtDeck[eachCard].state = .matched
-    }
+        }
     }
     mutating func removeXs() {
         dealtDeck.indices.forEach {dealtDeck[$0].state = .unselected}
