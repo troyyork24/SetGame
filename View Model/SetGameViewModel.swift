@@ -23,7 +23,8 @@ class SetGameViewModel: ObservableObject {
         setModel.dealCards(upTo: upTo)
     }
     func loadNewGame() {
-        self.setModel = SetGameModel()
+        setModel.showScrollPopUp = false
+        setModel = SetGameModel()
         setModel.dealCards(upTo: 12)
     }
     func winRemoval() {

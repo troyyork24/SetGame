@@ -40,13 +40,9 @@ struct AspectVGrid<Item: Identifiable, ItemView: View>: View {
                                 }
                         }
                     }
-                    .animation(.easeIn)
+                    .animation(.easeOut)
                 )
             }
-            
-            
-            
-            
         }
         
     }
@@ -69,8 +65,7 @@ private func widthThatFits(itemCount: Int, in size: CGSize, itemAspectRatio: CGF
         rowCount = (itemCount + (columnCount - 1)) / columnCount
     }
     while columnCount < itemCount && columnCount <= 4
-    
-    
+
     return floor(size.width / CGFloat(columnCount))
 }
 }

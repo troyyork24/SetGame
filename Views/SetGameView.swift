@@ -32,7 +32,9 @@ struct SetGameView: View {
             HStack {
                 Spacer()
                 Button("New Game") {
+                    withAnimation(.linear(duration: 0.9).speed(9)) {
                     setGameVM.loadNewGame()
+                }
                 }
                 .padding()
                 .foregroundColor(.white)
@@ -40,7 +42,9 @@ struct SetGameView: View {
                 .cornerRadius(40)
                 Spacer()
                 Button("Deal Cards") {
+                    withAnimation(.spring().speed(5)) {
                     setGameVM.dealCards(upTo: 3)
+                }
                 }
                 .padding()
                 .foregroundColor(.white)
